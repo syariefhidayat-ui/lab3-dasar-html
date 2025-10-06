@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fakultas & Program Studi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .listbox {
+            height: 120px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Form Pilihan Fakultas</h2>
+
+    <form>
+        <!-- Dropdown Menu Fakultas -->
+        <label for="fakultas">Pilih Fakultas:</label>
+        <select id="fakultas" name="fakultas">
+            <option value="teknik">Fakultas Teknik</option>
+            <option value="ekonomi">Fakultas Ekonomi</option>
+            <option value="kedokteran">Fakultas Kedokteran</option>
+            <option value="hukum">Fakultas Hukum</option>
+            <option value="fisip">Fakultas Ilmu Sosial dan Politik</option>
+        </select>
+
+        <!-- Listbox Program Studi -->
+        <label for="prodi">Pilih Program Studi (bisa pilih lebih dari satu):</label>
+        <select id="prodi" name="prodi" multiple class="listbox">
+            <option value="informatika">Teknik Informatika</option>
+            <option value="sipil">Teknik Sipil</option>
+            <option value="elektro">Teknik Elektro</option>
+            <option value="arsitektur">Arsitektur</option>
+            <option value="industri">Teknik Industri</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+    </form>
+</div>
+
+</body>
+</html>
